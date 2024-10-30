@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Name - Budapest With Tuli</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .home-link {
+            position: absolute;
+            top: -10px;
+            right: 0px;
+            z-index: 100;
+        }
+
+        .home-link img {
+            width: 188px;
+            height: 188px;
+            transition: transform 0.2s ease;
+        }
+
+        .home-link img:hover {
+            transform: scale(1.1);
+        }
+
+        .tour-page {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            padding: 20px;
+            gap: 40px;
+        }
+
+        .tour-description {
+            position: relative;
+            flex: 1;
+            padding: 20px;
+        }
+
+        .tour-image {
+            position: relative;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .tour-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 40px;
+            height: 65%;
+            width: 75%;
+            text-align: center;
+        }
+
+        .registration {
+
+            max-width: 600px;
+            padding: 20px;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="index.html" class="home-link">
+        <img src="images/home.png" alt="Home">
+    </a>
+
+    <header>
+        <h1>סיור בגבעת בודה</h1>
+    </header>
+
+    <main class="tour-page-buda-tour">
+        <section class="tour-description">
+            <div class="tour-image" style="background-image: url('images/buda.jpg');"></div>
+            <div class="tour-content">
+                <h2>בודה לעבר השקיעה</h2>
+                <p>
+                    .בואו להכיר את הצד הקסום של בודפשט בזמן הכי קסום ביום - שקיעה<br><br>
+                    עם סיפורים, נוף פנורמי מרהיב, היסטוריה
+                    ואקטואליה, הזוית היהודית ועם הלוקיישן מספר אחד בבודפשט לתמונות לאינסטוש <br><br>
+
+                    *?איזה אתרים נראה בסיור*<br><br>
+                    נתחיל את הסיור בכיכר אליזבת במרכז העיר (פשט), נמשיך בהליכה קצרה לכיכר נאדור ומשם נעלה על אוטובוס
+                    שייקח אותנו לגבעת בודה. נטייל סביב גבעת בודה ונראה בין השאר את: טירת בודה, מזרקת מתיאש, בית ראש
+                    הממשלה, ארמון שאנדור, אגדת ההוסאר, שער וינה, הרובע היהודי בבודה, בית הכנסת העתיק, כנסיית מתיאש,
+                    אנדרטת אישטוואן הקדוש ונסיים במצודת הדייגים עם הנוף הכי יפה בבודפשט</p>
+            </div>
+        </section>
+
+        <section id="tour-page-register" class="registration">
+            <h2>הירשמו עכשיו</h2>
+            <form action="submit_form.php" method="POST">
+                <div class="form-group">
+                    <label for="name">שם פרטי ומשפחה</label>
+                    <input type="text" id="name" name="name" placeholder="שם פרטי ומשפחה" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">כתובת אימייל</label>
+                    <input type="email" id="email" name="email" placeholder="כתובת אימייל" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">מספר טלפון</label>
+                    <input type="tel" id="phone" name="phone" placeholder="מספר טלפון" required>
+                </div>
+                <div class="form-group">
+                    <label for="amountofppl">מספר משתתפים</label>
+                    <input type="numberof" id="participants" name="ppl" placeholder="מספר משתתפים" required>
+                </div>
+                <div class="form-group">
+                    <label for="tour">בחר סיור</label>
+                    <select id="tour" name="tour">
+                        <option value="general">סיור הכרת העיר</option>
+                        <option value="jewish">סיור ברובע היהודי</option>
+                        <option value="buda">סיור בגבעת בודה</option>
+                        <option value="bend">ברך הדנובה - טיול יום</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date">בחר תאריך:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <button type="submit">אישור</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>צרו קשר</h2>
+        <img src="images/underline_accent.png" alt="underline accent" class="underline-accent">
+        <div class="contact-icons">
+            <a href="https://wa.me/36303078000" class="contact-btn">
+                <img src="images/WhatsApp_Icon.png" alt="WhatsApp">
+            </a>
+            <a href="https://www.instagram.com/budapestwithtuli/" class="contact-btn">
+                <img src="images/ig.png" alt="Instagram">
+            </a>
+            <a href="https://m.facebook.com/budapestwithtuli/" class="contact-btn">
+                <img src="images/fb.png" alt="Facebook">
+            </a>
+            <a href="mailto:budapest.tuli@gmail.com" class="contact-btn">
+                <img src="images/gmail.png" alt="Email">
+            </a>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>&copy; BudapestWithTuli | All rights reserved</p>
+    </footer>
+    <a href="https://wa.me/36303078000?text=Hey,%20I'd%20like%20to%20receive%20more%20information%20about%20the%20tours%20you're%20offering"
+        id="whatsapp-icon">
+        <img src="images/WhatsApp_Icon.png" alt="WhatsApp Icon">
+    </a>
+</body>
+
+</html>

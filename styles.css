@@ -1,0 +1,1121 @@
+header {
+    background: #15395d;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    position: relative;
+}
+
+/* Remove the header:after pseudo-element since we'll handle the gradient differently */
+
+body {
+    font-family: Tahoma;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    /* Make the gradient longer and adjust the color stops */
+    background: linear-gradient(180deg,
+            #15395d 0%,
+            #15395d 0%,
+            /* Keep solid color for top portion */
+            #f1f1f8 33%
+            /* Start transitioning earlier and end later */
+        );
+    min-height: 100vh;
+    /* Ensure the gradient covers the full viewport */
+}
+
+section {
+    position: relative;
+    z-index: 2;
+}
+
+/* Header Content Styling */
+.header-content {
+    display: flex;
+    justify-content: center;
+    /* Centers the headline horizontally */
+    align-items: center;
+    position: relative;
+    /* Allows positioning of the logo */
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 4rem;
+    text-align: center;
+    /* Centers the headline text */
+    flex-grow: 1;
+    /* Ensures the headline occupies available space */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.logo {
+    position: absolute;
+    left: 0;
+    top: -80px;
+    /* Moves the logo to the left */
+    width: 300px;
+    /* Adjust the size of your logo */
+    height: auto;
+    /* Keeps the aspect ratio */
+}
+
+
+h1,
+h2 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: white;
+    color: #133150;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #11304f;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+/* Our Tours Section Styling */
+#our-tours {
+    text-decoration: #15395d;
+    ;
+    margin: 40px 0;
+    /* Space above and below the section */
+    text-align: center;
+    /* Center text within the section */
+}
+
+.tour-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* Responsive grid layout */
+    gap: 20px;
+    /* Space between grid items */
+}
+
+.tour-card {
+    position: relative;
+    /* Allows absolute positioning of content */
+    border-radius: 8px;
+    /* Rounded corners for the cards */
+    overflow: hidden;
+    /* Ensures the content doesn't spill out */
+    color: white;
+    /* Text color */
+}
+
+.tour-image {
+    height: 400px;
+    /* Height of the image section */
+    background-size: cover;
+    /* Ensures the image covers the entire area */
+    background-position: center;
+    /* Center the image */
+}
+
+.tour-content {
+    position: absolute;
+    /* Position text content over the image */
+    bottom: 10px;
+    /* Space from the bottom */
+    left: 10px;
+    /* Space from the left */
+    right: 10px;
+    /* Space from the right */
+    background: rgba(0, 0, 0, 0.6);
+    /* Dark overlay for better text visibility */
+    padding: 10px;
+    /* Padding around text */
+}
+
+.tour-button {
+    display: inline-block;
+    /* Makes the button behave like a block */
+    margin-top: 10px;
+    /* Space above the button */
+    padding: 10px 15px;
+    /* Padding inside the button */
+    background: #15395d;
+    /* Button color */
+    color: white;
+    /* Button text color */
+    text-decoration: none;
+    /* Removes underline */
+    border-radius: 5px;
+    /* Rounded corners for the button */
+    transition: background 0.3s;
+    /* Transition effect on hover */
+}
+
+.tour-button:hover {
+    background: #15395d;
+    /* Darker color on hover */
+}
+
+
+.tour {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    background-color: #0073e6;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.registration {
+    background-color: rgba(255, 255, 255, 0.9);
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 40px 40px;
+    /* Increased horizontal padding to 60px */
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.registration h2 {
+    color: #15395d;
+    font-size: 1.8rem;
+    /* Slightly reduced from 2.2rem */
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+}
+
+.registration h2:after {
+    content: '';
+    display: block;
+    width: 60px;
+    /* Slightly reduced from 60px */
+    height: 3px;
+    background: #15395d;
+    margin: 12px auto 0;
+    border-radius: 2px;
+}
+
+/* Form Group Styling */
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Label Styling */
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    color: #15395d;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+/* Input Fields Styling */
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 0.95rem;
+    border: 2px solid #e1e5ea;
+    border-radius: 8px;
+    background-color: white;
+    transition: all 0.3s ease;
+    color: #333;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #15395d;
+    box-shadow: 0 0 0 4px rgba(21, 57, 93, 0.1);
+    outline: none;
+}
+
+/* Select Dropdown Styling */
+.form-group select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2315395d' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 16px;
+    padding-right: 40px;
+}
+
+
+button[type="submit"] {
+    width: 300px;
+    padding: 12px;
+    background: #15395d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 20px auto 0;
+    /* This ensures centering */
+    display: block;
+    /* This is important for margin auto to work */
+}
+
+button[type="submit"]:hover {
+    background: #1a4875;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(21, 57, 93, 0.2);
+}
+
+button[type="submit"]:active {
+    transform: translateY(0);
+}
+
+/* Placeholder Styling */
+input::placeholder {
+    color: #a0aec0;
+    font-size: 0.9rem;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 480px) {
+    .registration {
+        padding: 20px;
+        margin: 15px;
+    }
+
+    .registration h2 {
+        font-size: 1.5rem;
+    }
+
+    button[type="submit"] {
+        padding: 10px;
+        font-size: 0.95rem;
+    }
+}
+
+.form-group select,
+.form-group input[type="date"] {
+    width: 100%;
+}
+
+.form-group:has(select),
+.form-group:has(input[type="date"]) {
+    width: calc(50% - 20px);
+    /* Match the width of other form groups */
+    display: inline-block;
+}
+
+.registration form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 40px;
+    padding: 0 20px;
+    /* Add padding to the form container */
+}
+
+.form-group {
+    width: calc(50% - 20px);
+    margin-bottom: 0;
+    display: inline-block;
+}
+
+.form-group:has(select),
+.form-group:has(input[type="date"]) {
+    width: calc(50% - 20px);
+    display: inline-block;
+}
+
+/* Error State Styling */
+.form-group input:invalid:not(:placeholder-shown),
+.form-group select:invalid:not(:placeholder-shown) {
+    border-color: #dc3545;
+}
+
+/* Success State Styling */
+.form-group input:valid:not(:placeholder-shown),
+.form-group select:valid:not(:placeholder-shown) {
+    border-color: #28a745;
+}
+
+
+
+.gallery {
+    width: 900px;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.gallery div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 45px;
+    padding: 10px;
+    flex: none;
+}
+
+.gallery div img {
+    width: 100%;
+    filter: grayscale(100%);
+    transition: transform 0.5s;
+}
+
+.gallery div span {
+    width: 100%;
+    display: block;
+    height: 300px;
+    margin: 0 -19px;
+}
+
+
+.gallery::-webkit-scrollbar {
+    display: none;
+}
+
+/* Reduce the gallery wrapper margin */
+.gallery-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    /* Changed from 10% to 20px */
+}
+
+/* Adjust section padding if needed */
+section {
+    padding: 20px;
+    /* Changed from 40px */
+}
+
+
+
+/* Gallery navigation buttons */
+.gallery-wrap [id^="backBtn"],
+.gallery-wrap [id^="nextBtn"] {
+    width: 60px;
+    /* Adjust size as needed */
+    height: 60px;
+    /* Maintain aspect ratio */
+    margin: 0 60px;
+    /* Adjust distance from gallery */
+    cursor: pointer;
+    /* Add pointer cursor on hover */
+}
+
+/* Optional: Add hover effect */
+.gallery-wrap [id^="backBtn"]:hover,
+.gallery-wrap [id^="nextBtn"]:hover {
+    opacity: 0.8;
+}
+
+.gallery div img:hover {
+    filter: grayscale(0);
+    cursor: pointer;
+    transform: scale(1.3);
+
+}
+
+/* Container for the WhatsApp icon */
+#whatsapp-icon {
+    position: fixed;
+    /* Keep the fixed positioning */
+    bottom: 20px;
+    /* Maintain bottom positioning */
+    right: 20px;
+    /* Maintain right positioning */
+    width: 90px;
+    /* Set width */
+    height: 90px;
+    /* Set height */
+    animation: blink 2s infinite;
+    z-index: 1000;
+    /* Keep it above other elements */
+}
+
+/* The image itself */
+#whatsapp-icon img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+/* Blinking animation */
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.contact-btn {
+    background: none;
+    padding: 0;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-btn img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+/* Individual icon sizes */
+img[src*="WhatsApp_Icon"] {
+    width: 72px;
+}
+
+img[src*="fb"] {
+    width: 82px;
+}
+
+img[src*="ig"] {
+    width: 64px;
+}
+
+img[src*="gmail"] {
+    width: 100px;
+}
+
+.contact-btn img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #15395d;
+    /* Replace with your desired color */
+    padding: 10px;
+    /* Optional: Adds some space inside the footer */
+    text-align: center;
+    /* Optional: Centers the text */
+}
+
+#our-tours h2 {
+    color: #ffffff;
+    /* Replace with your desired text color */
+}
+
+
+#about h2 {
+    color: #15395d;
+    /* Replace with your desired text color */
+}
+
+#contact h2 {
+    color: #15395d;
+    /* Replace with your desired text color */
+}
+
+#ppl h2 {
+    color: #15395d;
+    /* Replace with your desired text color */
+}
+
+#register h2 {
+    color: #15395d;
+    /* Replace with your desired text color */
+}
+
+#photos h2 {
+    color: #15395d;
+    /* Replace with your desired text color */
+}
+
+our-tours h2 {
+    color: #ffffff;
+    /* Your desired text color */
+    margin-bottom: 0px;
+    /* Reduce space between headline and image */
+    text-align: center;
+}
+
+#about {
+    max-width: 600px;
+    /* Limits the section width */
+    margin: 0 auto;
+    /* Centers the section horizontally */
+    padding: 20px;
+    /* Adds space inside the section */
+}
+
+#ppl h2,
+#photos h2 {
+    margin-bottom: 20px;
+}
+
+#our-tours .underline-accent,
+#about .underline-accent,
+#photos .underline-accent,
+#ppl .underline-accent {
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    height: auto;
+    margin-top: -110px;
+    margin-bottom: -90px;
+    margin-right: auto;
+}
+
+
+#contact .underline-accent {
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    height: auto;
+    margin-top: -110px;
+    margin-bottom: -135px;
+    margin-right: auto;
+}
+
+#about,
+#ppl {
+    padding-top: -60px;
+    padding-bottom: 70px;
+    margin-bottom: -30px;
+}
+
+
+#ppl,
+#photos {
+    padding-top: -60px;
+    padding-bottom: -100px;
+    margin-bottom: 0px;
+}
+
+/* Add this new section for gallery spacing */
+.gallery-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+}
+
+.gallery {
+    margin-top: -30px;
+    margin-bottom: 0px;
+}
+
+.gallery div {
+    padding: 20px;
+}
+
+.tour-page-general-tour,
+.tour-page-jewish-tour,
+.tour-page-buda-tour,
+.tour-page-bend-tour {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 40px;
+}
+
+.tour-description {
+    color: white;
+    flex: 1;
+    padding: 20px;
+}
+
+.registration {
+    background-color: rgba(255, 255, 255, 0.9);
+    max-width: 600px;
+    margin: 20px auto;
+    /* Decreased the top margin from 40px to 20px */
+    padding: 40px 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+
+
+    /* Header Styles */
+    header {
+        width: 100%;
+        padding: 20px;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+
+    .header-content h1,
+    header h1 {
+        font-size: 2rem;
+        text-align: center;
+        width: 100%;
+        padding: 0 20px;
+
+        /* Space for home button */
+        box-sizing: border-box;
+    }
+
+
+    header p {
+        font-size: 1.2rem;
+        padding: 0 20px;
+    }
+
+    /* Home Button */
+    .home-link {
+        position: absolute !important;
+        top: 0px !important;
+        right: 0px !important;
+        z-index: 100;
+    }
+
+    .home-link img {
+        width: 110px !important;
+        height: 110px !important;
+        transition: transform 0.2s ease;
+    }
+
+    /* Main Layout */
+    main.tour-page-general-tour {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    main.tour-page-jewish-tour {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    main.tour-page-buda-tour {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    main.tour-page-bend-tour {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    section {
+        padding: 20px;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    /* Spacing Adjustments */
+    #photos {
+        margin-top: -130px;
+        margin-bottom: 60px;
+    }
+
+    #our-tours {
+        margin-top: 0px;
+    }
+
+    #register {
+        margin-top: -120px;
+    }
+
+    #ppl {
+        margin-top: -50px;
+    }
+
+    #ppl h2,
+    #photos h2 {
+        margin-bottom: 10px;
+    }
+
+    #photos .underline-accent,
+    #ppl .underline-accent {
+        display: block;
+        margin: 0 auto;
+        width: 250px;
+        height: auto;
+        margin-top: -110px;
+        margin-bottom: -110px;
+        margin-right: auto;
+    }
+
+    #our-tours .underline-accent {
+        display: block;
+        margin: 0 auto;
+        width: 250px;
+        height: auto;
+        margin-top: -110px;
+        margin-bottom: -80px;
+        margin-right: auto;
+    }
+
+    #about .underline-accent {
+        display: block;
+        margin: 0 auto;
+        width: 250px;
+        height: auto;
+        margin-top: -110px;
+        margin-bottom: -95px;
+        margin-right: auto;
+    }
+
+
+
+    /* Tour Grid */
+    .tour-grid {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+
+    .gallery-wrap {
+        display: flex;
+        justify-content: center;
+        margin: 40px auto;
+    }
+
+    /* Gallery */
+    .gallery {
+        width: 100%;
+        max-width: 900px;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        display: flex;
+        gap: 20px;
+        height: 300px;
+    }
+
+    .gallery div {
+
+        grid-template-columns: 1fr;
+        gap: 25px;
+        width: 350px;
+        height: 300px;
+    }
+
+    .gallery div span {
+        width: 100%;
+        display: block;
+        height: 300px;
+        margin: 0 -25px;
+    }
+
+    .gallery div img {
+        filter: grayscale(0);
+        /* Remove grayscale effect on mobile */
+        width: 70%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .gallery-wrap [id^="backBtn"],
+    .gallery-wrap [id^="nextBtn"] {
+        width: 40px;
+        height: 40px;
+        margin: 0 10px;
+    }
+
+    /* Tour Content */
+    .tour-content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transform: none;
+        background: rgba(0, 0, 0, 0.7);
+        padding: 20px;
+        height: auto;
+        min-height: 200px;
+        width: 100%;
+        box-sizing: border-box;
+        z-index: 2;
+    }
+
+    .tour-content h2,
+    .tour-content p {
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    .tour-image {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        min-height: 300px;
+    }
+
+    /* Registration Form */
+    .registration {
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .form-group,
+    .form-group:has(select),
+    .form-group:has(input[type="date"]) {
+        width: 100%;
+    }
+
+    /* Contact Section */
+    #contact {
+        width: 100%;
+        padding: 20px;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .contact-icons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .contact-btn {
+        width: 50px;
+        height: 50px;
+    }
+
+    /* Contact Icons Specific Sizes */
+    img[src*="WhatsApp_Icon"] {
+        width: 48px;
+    }
+
+    img[src*="fb"] {
+        width: 54px;
+    }
+
+    img[src*="ig"] {
+        width: 42px;
+    }
+
+    img[src*="gmail"] {
+        width: 60px;
+    }
+
+    /* Fixed WhatsApp Icon */
+    #whatsapp-icon {
+        width: 60px;
+        height: 60px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    /* Footer */
+    footer {
+        width: 100%;
+        padding: 20px;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+
+
+    .tour-page-general-tour .tour-content {
+        height: 640px;
+        /* Increased from default */
+    }
+
+    .tour-page-general-tour .tour-image {
+        height: 680px;
+        /* Increased from default */
+
+    }
+
+    .tour-page-jewish-tour .tour-content {
+        height: 740px;
+        /* Increased from default */
+    }
+
+    .tour-page-jewish-tour .tour-image {
+        height: 780px;
+        /* Increased from default */
+    }
+
+    .tour-page-buda-tour .tour-content {
+        height: 700px;
+        /* Increased from default */
+    }
+
+    .tour-page-buda-tour .tour-image {
+        height: 740px;
+        /* Increased from default */
+    }
+
+    .tour-page-bend-tour .tour-content {
+        height: 860px;
+        /* Increased from default */
+    }
+
+    .tour-page-bend-tour .tour-image {
+        height: 900px;
+        /* Increased from default */
+    }
+
+
+
+    #tour-page-register {
+        margin-top: 0px;
+        /* Adjust the top margin of the photos section */
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Additional adjustments for very small screens */
+@media screen and (max-width: 480px) {
+    .header-content h1 {
+        font-size: 2rem;
+    }
+
+    .button {
+        font-size: 1.2rem;
+        padding: 8px 16px;
+    }
+
+    section {
+        padding: 20px 10px;
+    }
+
+    /* Further gallery adjustments for very small screens */
+    .gallery {
+        max-width: 300px;
+    }
+
+    .gallery div {
+        width: 300px;
+    }
+
+    .gallery div img {
+        max-height: 300px;
+    }
+
+    /* Additional mobile optimization for very small screens */
+    @media screen and (max-width: 480px) {
+        .tour-content {
+            min-height: 150px;
+            padding: 15px;
+        }
+
+        .home-link img {
+            width: 80px;
+            /* Even smaller for very small screens */
+            height: 80px;
+        }
+
+        #our-tours .tour-content {
+            min-height: 150px;
+        }
+
+        header h1 {
+            padding-right: 90px;
+        }
+    }
+}
